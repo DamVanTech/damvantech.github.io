@@ -1,0 +1,92 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #b30000;
+    color: #000000;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    background-color: #a30000;
+    border-radius: 5px;
+}
+
+/* Main Content */
+main {
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section */
+.samples-section img {
+    float: left;
+    margin: 0 15px 10px 0; /* Adds space around the image */
+    width: 200px; /* Shrinks the image */
+    height: auto;
+    border-radius: 5px;
+}
+
+.samples-section::after {
+    content: "";
+    display: block;
+    clear: both; /* Ensures no overlap after the float */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #b30000;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .samples-section img {
+        float: none;
+        display: block;
+        margin: 0 auto 15px;
+    }
+
+    .samples-section {
+        text-align: center;
+    }
+}
