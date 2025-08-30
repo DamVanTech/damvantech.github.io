@@ -8,15 +8,15 @@
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
+    color: #e0d2d2;
+    background-color: #0a0a0a;
     padding: 20px;
 }
 
 /* Header */
 header {
-    background-color: #b30000;
-    color: rgb(0, 0, 0);
+    background-color: #9e00b3;
+    color: #e0d2d2;
     padding: 20px 10px;
     text-align: center;
 }
@@ -45,18 +45,18 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #a30000;
+    background-color: #5400a3;
     border-radius: 5px;
 }
 
 /* Sidebar */
 aside {
-    background-color: #eef5ff;
+    background-color: #0a0a0a;
     padding: 15px;
     margin: 20px auto;
     max-width: 800px;
     text-align: center;
-    border-left: 5px solid #b30000;
+    border-left: 5px solid #9e00b3;
     border-radius: 5px;
 }
 
@@ -78,7 +78,7 @@ figure {
 }
 
 .btn {
-    background-color: rgb(255, 30, 30);
+    background-color: #9e00b3;
     border: none;
     color: white;
     padding: 12px 30px;
@@ -87,14 +87,14 @@ figure {
 }
 
 .btn:hover {
-    background-color: rgb(225, 65, 65);
+    background-color: #5400a3;
 }
 
 figcaption {
     margin-top: 10px;
     font-size: 1rem;
     font-weight: bold;
-    color: #b30000;
+    color: #9e00b3;
 }
 
 /* Footer */
@@ -102,7 +102,7 @@ footer {
     text-align: center;
     padding: 10px;
     margin-top: 20px;
-    background-color: #b30000;
+    background-color: #9e00b3;
     color: white;
 }
 
