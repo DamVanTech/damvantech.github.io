@@ -51,7 +51,7 @@ main {
     padding: 10px;
     background-color: #0a0a0a;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(255, 0, 242, 0.5);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
 }
 
 /* About Section */
