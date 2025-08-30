@@ -1,6 +1,6 @@
 <?php
 // Change these to your email and subject
-$to = "info@damvan.ca";
+$to = "tech@damvan.ca";
 $subject = "New Form Submission from DamTech Website";
 
 // Check if form is submitted via POST
