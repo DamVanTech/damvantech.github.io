@@ -8,15 +8,15 @@
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
+    color: #e0d2d2;
+    background-color: #0a0a0a;
     padding: 20px;
 }
 
 /* Header */
 header {
-    background-color: #b30000;
-    color: #000000;
+    background-color: #9e00b3;
+    color: #e0d2d2;
     padding: 20px 10px;
     text-align: center;
 }
@@ -26,26 +26,21 @@ header h1 {
     margin-bottom: 10px;
 }
 
-header p {
-    font-size: 1rem;
-}
-
 nav {
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin-bottom: 10px;
 }
 
 nav a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 1rem;
     padding: 5px 10px;
 }
 
 nav a:hover {
-    background-color: #a30000;
+    background-color: #5400a3;
     border-radius: 5px;
 }
 
@@ -54,43 +49,24 @@ main {
     margin: 20px auto;
     max-width: 1200px;
     padding: 10px;
-    background-color: #fff;
+    background-color: #0a0a0a;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
 }
 
-section {
-    margin-bottom: 20px;
+/* About Section */
+.samples-section img {
+    float: left;
+    margin: 0 15px 10px 0; /* Adds space around the image */
+    width: 200px; /* Shrinks the image */
+    height: auto;
+    border-radius: 5px;
 }
 
-section h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #b30000;
-}
-
-section p, section li {
-    margin-bottom: 10px;
-    line-height: 1.8;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-strong {
-    color: #333;
-}
-
-h3 {
-    font-size: 1.3rem;
-    margin-top: 15px;
-    color: #333;
+.samples-section::after {
+    content: "";
+    display: block;
+    clear: both; /* Ensures no overlap after the float */
 }
 
 /* Footer */
@@ -98,25 +74,19 @@ footer {
     text-align: center;
     padding: 10px;
     margin-top: 20px;
-    background-color: #b30000;
+    background-color: #9e00b3;
     color: white;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    nav {
-        flex-direction: column;
+    .samples-section img {
+        float: none;
+        display: block;
+        margin: 0 auto 15px;
     }
 
-    nav a {
-        margin-bottom: 10px;
-    }
-
-    header h1 {
-        font-size: 1.5rem;
-    }
-
-    section h2 {
-        font-size: 1.3rem;
+    .samples-section {
+        text-align: center;
     }
 }
